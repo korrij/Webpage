@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js" defer></script>
-  
 </head>
 <body>
 
@@ -18,11 +17,17 @@
     </ul>
   </nav>
 
+  <!-- Hero/Header Section -->
+  <header class="hero">
+    <h1>Welcome to My Web Programming Journey!</h1>
+    <p>Explore my projects, learn about my goals, and meet my furry friend Odie!</p>
+  </header>
+
   <section id="about">
     <h2>About Me</h2>
-    <p>Hi! I'm <strong>Jessica Koroma</strong>, a creative and curious learner who joined this course to gain real-world skills in web development. With a background in biology and experience in retail and the military, I made a bold decision to transition into tech through an AAS in IT.</p>
-    <img src="images/image1.JPG" alt="Photo of Jessica Koroma" />
-    
+    <p>Hi! I'm <strong>Jessica Koroma</strong>, a creative and curious learner who joined this course to gain real-world skills in web development...</p>
+    <img src="images/image1.JPG" alt="Photo of Jessica" />
+
     <h3>🧠 What I Learned</h3>
     <ul class="custom-list">
       <li><strong>HTML5</strong> – Semantic structure and accessibility</li>
@@ -32,10 +37,10 @@
     </ul>
 
     <h3>🛠️ Technologies & Techniques Used</h3>
-    <p>I worked with HTML, CSS, JavaScript, and jQuery throughout this course. I built interactive web pages, validated forms, animated UI elements, and practiced mobile responsiveness and layout styling.</p>
+    <p>I worked with HTML, CSS, JavaScript, and jQuery throughout this course...</p>
 
-    <h3>🎯 Career Goals</h3>
-    <p>This class has strengthened my goal to work in front-end web development or UX/UI design. I love planning and building functional designs, and I’m working on launching my own portfolio next.</p>
+    <h3>🌟 Career Goals</h3>
+    <p>This class has strengthened my goal to work in front-end web development or UX/UI design...</p>
 
     <h3>📂 Assignments Completed</h3>
     <ul class="custom-list">
@@ -46,40 +51,18 @@
       <li><a href="https://korrij.github.io/jquery-effects/" target="_blank">jQuery Effects and Animation</a></li>
     </ul>
 
-    <!-- jQuery Effects -->
     <button id="toggle-facts">Click to Toggle Extra Facts</button>
     <div id="extra-facts" style="display: none;">
       <p>I enjoy creating clean, minimal designs that are user-friendly.</p>
       <p>One of my favorite parts of this class was learning how to animate elements using jQuery.</p>
     </div>
 
-    <!-- JavaScript Custom Function -->
     <div class="tip-box">
-      <h3>🎲 Fun Random Tip</h3>
+      <h3>🌪️ Fun Random Tip</h3>
       <p id="randomTip">Click below for a random web dev tip!</p>
       <button onclick="showRandomTip()">Show Tip</button>
     </div>
   </section>
-
-  <script>
-    function showRandomTip() {
-      const tips = [
-        "Always validate your HTML and CSS for clean code.",
-        "Test your site on both desktop and mobile devices.",
-        "Use external stylesheets to keep code organized.",
-        "Use semantic tags for better accessibility and SEO.",
-        "jQuery simplifies many repetitive JavaScript tasks!"
-      ];
-      const randomIndex = Math.floor(Math.random() * tips.length);
-      document.getElementById("randomTip").textContent = tips[randomIndex];
-    }
-
-    $(document).ready(function () {
-      $('#toggle-facts').click(function () {
-        $('#extra-facts').slideToggle();
-      });
-    });
-  </script>
 
 </body>
 </html>

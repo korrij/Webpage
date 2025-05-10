@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+header h1 {
+    font-size: 3rem; /* or try 4rem, 5rem, etc. */
+    font-weight: bold;
+    text-align: center;
+  }
+
 /* Body Style */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -181,4 +187,15 @@ body {
     padding: 15px;
     border-radius: 10px;
     margin-top: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #3b3b3b;
+    margin-bottom: 1rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Offset equals height of your fixed navbar */
   }
