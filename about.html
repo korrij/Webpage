@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Jessica Koroma, a creative and curious learner who joined this course to gain real-world skills in web development. With a background in biology and retail, I’ve recently made a career shift into IT to pursue front-end development and UX/UI design.</p>
+    
+    <h3>🧠 What I Learned</h3>
+    <ul>
+      <li><strong>HTML5</strong> – how to structure semantic, accessible web pages</li>
+      <li><strong>CSS</strong> – for styling, layout control, and responsive design</li>
+      <li><strong>JavaScript</strong> – including functions, loops, conditionals, and form validation</li>
+      <li><strong>jQuery</strong> – for DOM manipulation, event handling, and animations</li>
+    </ul>
+
+    <h3>🛠️ Technologies & Techniques Used</h3>
+    <p>Throughout this course, I used HTML, CSS, JavaScript, and jQuery. I practiced responsive layout design, event-driven programming, DOM traversal, image manipulation, and form validation.</p>
+
+    <h3>🎯 How This Class Helped Me</h3>
+    <p>This class gave me hands-on experience in designing interactive websites, which aligns with my goal of becoming a front-end developer. I plan to continue building projects and showcasing my work in an online portfolio.</p>
+
+    <h3>📂 Assignments Completed</h3>
+    <ul>
+      <li><a href="index.html">Final Project: Home Page</a></li>
+      <li><a href="orderform.html">jQuery Form Validation</a></li>
+      <li><a href="mums.html">jQuery Images</a></li>
+      <li><a href="pansy.html">jQuery Effects and Animation</a></li>
+      <li><a href="javascript.html">JavaScript Basics & Functions</a></li>
+    </ul>
+  </section>
+
+  <!-- jQuery Effects -->
+  <button id="toggle-facts">Click to Toggle Extra Facts</button>
+  <div id="extra-facts" style="display: none;">
+    <p>I enjoy creating clean, functional designs that are user-friendly and elegant.</p>
+    <p>One of my favorite parts of this class was learning how to enhance UI elements with animations using jQuery.</p>
+  </div>
+
+  <!-- JavaScript Custom Function -->
+  <div>
+    <h3>🎲 Fun Random Tip</h3>
+    <p id="randomTip">Click the button below for a random tip!</p>
+    <button onclick="showRandomTip()">Show Tip</button>
+  </div>
+
+  <script>
+    function showRandomTip() {
+      const tips = [
+        "Validate your HTML and CSS for clean, error-free code.",
+        "Use external stylesheets to keep code organized.",
+        "Test your site on multiple devices for responsive design.",
+        "Always comment your code for readability.",
+        "jQuery can make interactions smoother and simpler!"
+      ];
+      const randomIndex = Math.floor(Math.random() * tips.length);
+      document.getElementById("randomTip").textContent = tips[randomIndex];
+    }
+
+    $(document).ready(function () {
+      // jQuery toggle effect
+      $('#toggle-facts').click(function () {
+        $('#extra-facts').slideToggle();
+      });
+    });
+  </script>
+
+</body>
+</html>

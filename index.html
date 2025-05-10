@@ -1,55 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to My Page: Embracing a New Path</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <nav>
-            <a href="#">Home</a> | <a href="#">Assignment 1</a> | <a href="#">Assignment 2</a>
-          </nav>
-        <header>
-            <h1>Welcome to My Page: Embracing a New Path</h1>
-        </header>
-        <main>
-            <section>
-                <h2>Professional Goals</h2>
-                <p>Switching career paths is both exciting and challenging, but I am eager to embark on this new journey into web development. My professional goal is to become a skilled front-end developer, combining creativity with technical expertise to build user-friendly and visually appealing websites. I want to work in a field that allows me to problem-solve, continuously learn, and create digital experiences that make a difference. A career in web development offers flexibility, growth, and the potential for remote work, which aligns with my desire for a balanced and fulfilling professional life. Additionally, I hope to leverage my background in biology and creative problem-solving skills to bring a unique perspective to the tech industry. My long-term ambition is to specialize in <span style="color:blueviolet; font-weight:bold;">UX/UI design</span>, where I can blend my analytical mindset with my artistic side. Ultimately, I want to secure a role that provides financial stability and allows me to do work that is both engaging and meaningful.
-                </p>
-                <img src="images/image1.JPG" alt="Jessica Koroma">
-            </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Programming Journey</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
 
-            <section>
-                <h2>Why I Am Taking Beginning Web Programming</h2>
-                <p>I chose to take <span style="color:rgb(12, 37, 202); font-weight:bold;">Beginning Web Programming</span> because I want to build a strong foundation in coding and understand the fundamental principles of web development. Transitioning into a new field requires learning from the ground up, and this course is the perfect starting point. I am eager to gain hands-on experience with HTML, CSS, and JavaScript, as these are the core technologies for building websites. Learning how to structure web pages, style them effectively, and add interactive elements excites me, as I enjoy both logical problem-solving and creative design. Additionally, this course will help me develop the technical skills needed to pursue freelance opportunities or secure a junior web developer position. I look forward to applying what I learn to real-world projects and building a portfolio that showcases my abilities. Most importantly, I want to challenge myself and gain confidence in my ability to learn and excel in a completely new field.
-                </p>
-            </section>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#why">Why Web Programming</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#odie">Odie</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
 
-            <section>
-                <h2>My Personal Hobbies</h2>
-                <p>Outside of my professional aspirations, I have a variety of hobbies that bring joy and balance to my life. I love <span style="color:rgb(196, 34, 123); font-weight:bold;">traveling and experiencing new cultures</span>, as it broadens my perspective and allows me to appreciate the diversity of the world. Spending time with family and friends is also very important to me, as I value meaningful connections and shared experiences. When I am not socializing, I enjoy outdoor activities like hiking or simply relaxing in nature, which helps me recharge and stay inspired. Additionally, I have a passion for creativity, whether it is through drawing, painting, or exploring different forms of artistic expression. Creativity plays a significant role in how I approach problem-solving and personal growth, making it a natural fit for my new journey into web development. I believe that having a mix of technical and creative skills will help me succeed in my career while also keeping my work fulfilling and enjoyable.</p>
-            </section>
+  <!-- Main Sections -->
+  <section id="goals">
+    <h2>My Goals</h2>
+    <p>I want to become skilled in front-end development, build visually appealing websites, and create content that helps others.</p>
+  </section>
 
-            <section>
-                <div class="My dog">
-                    <h2>Meet My Favorite Dog Odie!</h2>
-                    <img src="images/image2.PNG" alt="Odie">
-                    <p>He's super friendly and very silly!</p>
-                </div>
-            </section>
+  <section id="why">
+    <h2>Why I Chose Web Programming</h2>
+    <p>I enjoy creativity, problem-solving, and building digital experiences. Web programming is a perfect blend of all three.</p>
+  </section>
 
-        </header>
-        </main>
-        <footer>
-            <p>Author: <a href="https://www.linkedin.com/in/jkoroma/">Linkedin page</a>
-                <script>
-                alert("Welcome!");
-                var guest = prompt("Welcome! This is Jessica Koroma's Webpage. See details at the end of the article. Please enter your name.");
-                document.write("<h2>Thank you for visiting Jessica's Webpage, " + guest + "!</h2>");
-                </script>
-                </script>
-        </footer>
-    </body>
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <p>I love designing, writing, exploring new tech, and spending time with my dog Odie.</p>
+  </section>
+
+  <section id="odie">
+    <h2>Meet Odie</h2>
+    <img src="images/odie.png" alt="Photo of Odie" />
+    <p>Odie is my adorable companion who keeps me motivated during study sessions!</p>
+  </section>
+
+</body>
 </html>
